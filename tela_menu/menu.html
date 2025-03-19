@@ -13,31 +13,34 @@
     <div class="container">
         <h1>Bem vindo ao <br> <span>CODPLAY 360°</span></h1>
 
-        <!-- Usuário -->
-        <div id="nomeUsuario" class="profile">
-            <span id="nome"></span> <!-- Nome será atualizado pelo JS -->
+        <!-- Usuário-->
+        <div class="profile">
+            <span>Otavio La Torraca</span>
             <img src="buraconegro.png" alt="Avatar">
         </div>
 
         <div class="jogos">
+
             <!-- QUIZ -->
             <div class="tela">
                 <img src="quiz.png" alt="Quiz Programação">
                 <p>QUIZ PROGRAMAÇÃO</p>
             </div>
+
+          
+            <div class="tela">
+                <img src="logica.png" alt="Complete a Lógica">
+                <p>COMPLETE A LÓGICA</p>
+            </div>
+            
+
+            <div class="tela">
+                <img src="digitacao.png" alt="Digitação de Código">
+                <p>DIGITAÇÃO DE COD</p>
+            </div>
+             
+            
         </div>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Recupera o nome do usuário salvo no localStorage
-            let nomeUsuario = localStorage.getItem("nomeUsuario");
-            
-            if (nomeUsuario) {
-                // Exibe o nome do usuário na tela
-                document.querySelector("#nome").textContent = nomeUsuario;
-            }
-        });
-    </script>
 </body>
 </html>
